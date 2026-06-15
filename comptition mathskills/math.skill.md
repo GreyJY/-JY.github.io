@@ -20,3 +20,27 @@ while(maxK*maxK>total)maxK--;//反之上面结论
 
 long的大数据后面要加l
 
+
+关于大数BigInteger用法
+一.首先得导入java.math.BigInteger的包
+二.其次有三种创建对象方式
+1.BigInteger one =BigIeteger.ONE//1,还有英文的0和10
+2.BigInteger num1 = BigInteger.valueOf(50);
+3.BigInteger num2 = new BigInteger ("999999999999999");
+三.核心运算
+BigInteger a = BigInteger.valueOf(10);
+同样方法搞出一个对象b数字是3
+则有BigInteger add = a.add(b);用英文的这个格式来算
+//10+3=13
+BigInteger x =BigInteger.valueOf(20);
+同样方法创建出一个对象y,值是10
+则再创建一个数字是int cmp =x.compareTo(y);
+if(cmp>0)sout("x更大")//这个运算感觉就是减法
+自乘
+res=res.multiply(BigInteger.valueOf(i));
+四.转普通数字/输出
+BigInteger big = big.toString();
+String s=big.toString();
+long I =big.longValue();
+
+
