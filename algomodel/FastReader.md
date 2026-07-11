@@ -5,13 +5,14 @@ class FastReader{
 BufferedReader br;
 StringTokenizer st;
 public FastReader(){
-br=new BufferedReader(new InputStreamReader(System.in));
+  br=new BufferedReader(new InputStreamReader(System.in));
 }
 String next(){
-while(st==null||!st.hasMoreTokens()){
-try{
-st=new StringTokenizer(br.readLine());
-}catch(IOException e){
+   while(st==null||!st.hasMoreTokens()){
+   try{
+  st=new StringTokenizer(br.readLine());
+}
+catch(IOException e){
 e.printStackTrace();
 }
 }
