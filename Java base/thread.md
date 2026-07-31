@@ -6,7 +6,7 @@ public class  ThreadDemo {
           System.out.println("子线程：" + Thread.currentThread().getName()  );  Lambda表达式后面对象的括号里放填充内容，可以是对象，也可以是方法
    });
 
-   thread.start();
+   thread.start();很重要的start方法，它会通知 JVM 创建一个新的执行线程，然后由新线程执行 run() 里的代码，单独的run方法只是调用的普通方法，并没有开启新线程
 
  System.out.println("主线程：" + Thread.currentThread().getName());
     }
