@@ -11,3 +11,14 @@ public class  ThreadDemo {
  System.out.println("主线程：" + Thread.currentThread().getName());
     }
 }
+
+线程池
+ExecutorService executor =
+        Executors.newFixedThreadPool(4);
+
+executor.submit(() -> {
+    System.out.println("线程池执行任务");
+});
+
+executor.shutdown();
+一般开发情况不会new 新线程，而是交给线程池
