@@ -8,3 +8,29 @@ Spring Transaction：事务与回滚
 Spring Validation：参数校验
 Spring Security：登录验证
 Spring Actuator：观察 Spring 容器
+8/4
+浏览器
+ |
+ | 请求 /songlist
+ ↓
+Controller
+ |
+ | 调用
+ ↓
+Service
+ |
+ | 查询
+ ↓
+数据库返回 SongList对象
+ |
+ ↓
+Model保存数据
+ |
+ ↓
+Thymeleaf读取Model
+ |
+ ↓
+生成最终HTML
+ |
+ ↓
+浏览器显示
